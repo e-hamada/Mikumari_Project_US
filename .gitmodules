@@ -7,3 +7,6 @@
 [submodule "hdl/mikumari"]
 	path = hdl/mikumari
 	url = https://github.com/kpro-j2/mikumari_hamada.git
+[submodule "SiTCP_Netlist_for_Artix_UltraScalePlus"]
+	path = SiTCP_Netlist_for_Artix_UltraScalePlus
+	url = https://github.com/BeeBeansTechnologies/SiTCP_Netlist_for_Artix_UltraScalePlus.git
