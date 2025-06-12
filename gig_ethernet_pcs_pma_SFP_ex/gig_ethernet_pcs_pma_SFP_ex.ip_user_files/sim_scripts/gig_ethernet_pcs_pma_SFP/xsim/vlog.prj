@@ -1,0 +1,13 @@
+verilog xil_defaultlib  \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gtwizard_ultrascale_v1_7_gtye4_channel.v" \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt_gtye4_channel_wrapper.v" \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt_gtwizard_gtye4.v" \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt_gtwizard_top.v" \
+
+verilog mylib  \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

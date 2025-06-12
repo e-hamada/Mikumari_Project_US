@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Nov 22 18:32:07 2024
+# Process ID: 10783
+# Current directory: /home/hamada/K_Pro/firmware/AUM/MikumariPrim_ver7/MikumariPrim-Ex/gig_ethernet_pcs_pma_SFP_ex
+# Command line: vivado -notrace -source /home/hamada/K_Pro/firmware/AUM/MikumariPrim_ver7/MikumariPrim-Ex/ip/gig_ethernet_pcs_pma_SFP/gig_ethernet_pcs_pma_SFP_ex.tcl
+# Log file: /home/hamada/K_Pro/firmware/AUM/MikumariPrim_ver7/MikumariPrim-Ex/gig_ethernet_pcs_pma_SFP_ex/vivado.log
+# Journal file: /home/hamada/K_Pro/firmware/AUM/MikumariPrim_ver7/MikumariPrim-Ex/gig_ethernet_pcs_pma_SFP_ex/vivado.jou
+# Running On: daqmwpc4.kek.jp, OS: Linux, CPU Frequency: 2500.000 MHz, CPU Physical cores: 6, Host memory: 33538 MB
+#-----------------------------------------------------------
+start_gui
+source /home/hamada/K_Pro/firmware/AUM/MikumariPrim_ver7/MikumariPrim-Ex/ip/gig_ethernet_pcs_pma_SFP/gig_ethernet_pcs_pma_SFP_ex.tcl -notrace
+update_compile_order -fileset sources_1

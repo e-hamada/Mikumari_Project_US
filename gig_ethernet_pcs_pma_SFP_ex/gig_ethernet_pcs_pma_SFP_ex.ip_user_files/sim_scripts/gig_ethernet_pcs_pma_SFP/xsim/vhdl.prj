@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP_reset_sync.vhd" \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP_sync_block.vhd" \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/transceiver/gig_ethernet_pcs_pma_SFP_transceiver.vhd" \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP_block.vhd" \
+"../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP.vhd" \
+
+# Do not sort compile order
+nosort

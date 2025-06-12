@@ -1,0 +1,11 @@
+gtwizard_ultrascale_v1_7_gtye4_channel.v,verilog,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gtwizard_ultrascale_v1_7_gtye4_channel.v,
+gig_ethernet_pcs_pma_SFP_gt_gtye4_channel_wrapper.v,verilog,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt_gtye4_channel_wrapper.v,
+gig_ethernet_pcs_pma_SFP_gt_gtwizard_gtye4.v,verilog,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt_gtwizard_gtye4.v,
+gig_ethernet_pcs_pma_SFP_gt_gtwizard_top.v,verilog,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt_gtwizard_top.v,
+gig_ethernet_pcs_pma_SFP_gt.v,verilog,mylib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/ip_0/sim/gig_ethernet_pcs_pma_SFP_gt.v,
+gig_ethernet_pcs_pma_SFP_reset_sync.vhd,vhdl,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP_reset_sync.vhd,
+gig_ethernet_pcs_pma_SFP_sync_block.vhd,vhdl,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP_sync_block.vhd,
+gig_ethernet_pcs_pma_SFP_transceiver.vhd,vhdl,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/transceiver/gig_ethernet_pcs_pma_SFP_transceiver.vhd,
+gig_ethernet_pcs_pma_SFP_block.vhd,vhdl,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP_block.vhd,
+gig_ethernet_pcs_pma_SFP.vhd,vhdl,xil_defaultlib,../../../../gig_ethernet_pcs_pma_SFP_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_SFP/synth/gig_ethernet_pcs_pma_SFP.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

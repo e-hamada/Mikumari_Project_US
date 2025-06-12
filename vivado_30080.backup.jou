@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Sep  6 16:50:12 2024
+# Process ID: 30080
+# Current directory: /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex
+# Command line: vivado
+# Log file: /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/vivado.log
+# Journal file: /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/vivado.jou
+# Running On: daqmwpc4.kek.jp, OS: Linux, CPU Frequency: 2499.847 MHz, CPU Physical cores: 6, Host memory: 33538 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+set_param project.defaultIPCacheSetting none
+upgrade_ip -vlnv xilinx.com:ip:gig_ethernet_pcs_pma:16.2 [get_ips  gig_ethernet_pcs_pma] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips gig_ethernet_pcs_pma] -no_script -sync -force -quiet
+generate_target all [get_files  /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci]
+catch { config_ip_cache -export [get_ips -all gig_ethernet_pcs_pma] }
+export_ip_user_files -of_objects [get_files /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci]
+launch_runs gig_ethernet_pcs_pma_synth_1 -jobs 6
+wait_on_run gig_ethernet_pcs_pma_synth_1
+export_simulation -of_objects [get_files /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci] -directory /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.ip_user_files/sim_scripts -ip_user_files_dir /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.ip_user_files -ipstatic_source_dir /home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.cache/compile_simlib/modelsim} {questa=/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.cache/compile_simlib/questa} {xcelium=/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.cache/compile_simlib/xcelium} {vcs=/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.cache/compile_simlib/vcs} {riviera=/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+set_property IS_MANAGED false [get_files gig_ethernet_pcs_pma.xci]
+reset_run gig_ethernet_pcs_pma_synth_1
+launch_runs gig_ethernet_pcs_pma_synth_1 -jobs 6
+wait_on_run gig_ethernet_pcs_pma_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_project
+open_project /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.xpr
+update_compile_order -fileset sources_1
+set_param project.defaultIPCacheSetting none
+set_property IS_MANAGED true [get_files gig_ethernet_pcs_pma.xci]
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:gig_ethernet_pcs_pma:16.2 [get_ips  gig_ethernet_pcs_pma] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips gig_ethernet_pcs_pma] -no_script -sync -force -quiet
+generate_target all [get_files  /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci]
+catch { config_ip_cache -export [get_ips -all gig_ethernet_pcs_pma] }
+export_ip_user_files -of_objects [get_files /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci]
+launch_runs gig_ethernet_pcs_pma_synth_1 -jobs 6
+wait_on_run gig_ethernet_pcs_pma_synth_1
+export_simulation -of_objects [get_files /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci] -directory /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.ip_user_files/sim_scripts -ip_user_files_dir /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.ip_user_files -ipstatic_source_dir /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.cache/compile_simlib/modelsim} {questa=/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.cache/compile_simlib/questa} {xcelium=/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.cache/compile_simlib/xcelium} {vcs=/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.cache/compile_simlib/vcs} {riviera=/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+set_property IS_MANAGED false [get_files gig_ethernet_pcs_pma.xci]
+reset_run gig_ethernet_pcs_pma_synth_1
+launch_runs gig_ethernet_pcs_pma_synth_1 -jobs 6
+wait_on_run gig_ethernet_pcs_pma_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/bit/miku-secondex-v2.3-1.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/bit/miku-primex-v2.3-1.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.runs/impl_1/toplevel.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.runs/impl_1/toplevel.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.runs/impl_1/toplevel.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+file mkdir /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.srcs/sim_1/new/tb_Cdcm8RxImpl.v w ]
+add_files -fileset sim_1 /home/hamada/K_Pro/firmware/MikumariSecnd/MikumariSecnd-Ex/build/MikumariSecnd-Ex.srcs/sim_1/new/tb_Cdcm8RxImpl.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Cdcm8RxImpl [get_filesets sim_1]
+set_property top_lib mylib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source tb_Cdcm8RxImpl.tcl
+restart
+run 10000ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {/home/hamada/K_Pro/firmware/MikumariPrim/MikumariPrim-Ex/build/MikumariPrim-Ex.runs/impl_1/toplevel.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_sim
